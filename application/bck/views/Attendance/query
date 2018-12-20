@@ -1,0 +1,4 @@
+Attendance_query:
+
+fetch class accodding teacher:
+SELECT * FROM `teacher_class_division_subject_assgn` join class on class_id = TCDS_class_id join division on division_id = TCDS_division_id join subject on subject_id=TCDS_subject_id where TCDS_expiry_date = '9999-12-31' and TCDS_AY_id = 5 and TCDS_school_profile_id = 1 and TCDS_employee_profile_id = 14
